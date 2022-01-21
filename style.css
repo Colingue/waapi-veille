@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap');
+
+
+:root {
+    --pink: #FC5DBC;
+    --blue: #66B2FF;
+    --black: #262626;
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Be Vietnam Pro';
+}
+
+h1, h2, h3{
+    margin: 0;
+}
+
+#intro{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+#intro .main-title{
+    height: 300px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
+#intro .main-title h1{
+    font-family: Shrikhand;
+    font-size: 220px;
+    letter-spacing: 1rem;
+    color: var(--black);
+    z-index: 2;
+}
+
+
+#intro .main-title h1:nth-child(2) {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: white;
+    text-shadow: 3px 3px var(--blue);
+    z-index: -1;
+}
+
+#intro .main-title h1:nth-child(3) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: white;
+    text-shadow: 5px 2px var(--pink);
+    z-index: -1;
+}
+
+#intro .subtitle{
+    font-size: 40px;
+}
+
+#intro .subtitle span:nth-child(odd){
+    color: var(--pink);
+}
+
+#intro .subtitle span:nth-child(even){
+    color: var(--blue);
+}
+
+.summary{
+    width: 400px;
+    margin: 80px auto
+}
+
+.summary ul{
+    list-style: none;
+    margin: auto;
+}
+
+.summary li{
+    text-align: left;
+    padding: 10px 0;
+}
+
+.summary a{
+    text-decoration: none;
+    font-family: Shrikhand;
+    font-size: 40px;
+    color: var(--black);
+}
+
+h2{
+    font-family: Shrikhand;
+    font-size: 40px;
+    color: var(--black);
+}
+
+#presentation, #avantages, #exemple{
+    width: 50%;
+    margin: auto;
+}
+
+h4{
+    color: var(--pink);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+p{
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+/* Exemple */
+
+#universe {
+    overflow: hidden;
+    background: black;
+    height: 600px;
+    width: 600px;
+    margin: auto;
+}
+
+.star{
+    height: 2px;
+    width: 2px;
+    opacity: 1;
+    position: absolute;
+}
+
+.espace{
+    height: 500px;
+}

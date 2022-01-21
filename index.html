@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waapi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro">
+        <div class="main-title">
+            <h1>WAAPI</h1>
+            <h1>WAAPI</h1>
+            <h1>WAAPI</h1>
+        </div>
+
+        <h3 class="subtitle"><span>W</span>eb <span>A</span>nimation <span>A</span>pplication <span>P</span>rogramming <span>I</span>nterface</h3>
+
+        <div class="summary">
+            <ul>
+                <li><a href="">1. Présentation</a></li>
+                <li><a href="">2. Avantages et Inconvenients</a></li>
+                <li><a href="">3. Exemple</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="presentation">
+        <h2>1. Présentation</h2>
+        <h4>Qu'est ce que WAAPI ?</h4>
+
+        <p>WAAPI est l’abréviation de Web Animation API ou Web Animation Application Programming
+            Interface. C’est une API native en javascript qui est basée sur les animations css et
+            qui permet de les gérer directement en javascript. Grâce à cette API, il est possible
+            de construire des animations et d’avoir un contrôle sur leur lecture. Elle va combiner
+            la puissance des performances CSS et les avantages de Javascript.</p>
+
+        <h4>2 Modèles</h4>
+
+        <p>Il y a deux modèles à prendre en compte pour maîtriser cette api : le Timing Model (modèle de chronométrage) et l’Animation Model (modèle d’animation).
+            Le Timing Model va gérer la durée de l’animation, le début, la fin et les autres étapes de l’animation.
+            L’Animation Model qui gère toutes les propriétés CSS d’une animation.
+        </p>
+
+        <h4>Comment utiliser l'API</h4>
+
+        <p>Pour utiliser l’API, il faut utiliser la méthode JavaScript “animate”.
+            Elle prend 2 paramètres : un tableau composé d'objet avec les différentes propriétés CSS que l'on veut utiliser pour animer.
+            Le second paramètre est la timeline, définit par un objet qui peut prendre différentes options (le délai, l'itération, la durée, etc)
+        </p>
+    </div>
+
+    <div id="avantages">
+        <h2>Avantages et Inconvénients</h2>
+
+        <h4>Avantages</h4>
+
+        <ul>
+            <li>Donne aux développeurs d'avantages de contrôle sur les animations CSS</li>
+            <li>Performances</li>
+            <li>Possibilité d'inverser, de mettre en pause, d'accélerer les animations.</li>
+            <li>Accès à toutes les animations</li>
+            <li>Natif</li>
+        </ul>
+
+        <h4>Inconvénients</h4>
+
+        <p>Il y a deux modèles à prendre en compte pour maîtriser cette api : le Timing Model (modèle de chronométrage) et l’Animation Model (modèle d’animation).
+            Le Timing Model va gérer la durée de l’animation, le début, la fin et les autres étapes de l’animation.
+            L’Animation Model qui gère toutes les propriétés CSS d’une animation.
+        </p>
+
+        <h4>Concurrence</h4>
+
+        <p>Il existe des alternatives pour construire des animations. Par exemple JQuery qui propose des fonctionnalités d'animation, comme fadeIn(), fadeOut() qui permettent de faire des fondus d'apparitions d'elements ou encore la fonction animate() qui permet d'animer des propriétés CSS.
+            Pour faire des animations plus complexes, il est possible d'utiliser la librairie GreenSock.
+        </p>
+    </div>
+
+    <div id="exemple">
+        <h2>3. Exemple</h2>
+
+        <div id="universe"></div>
+        <div class="espace"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
