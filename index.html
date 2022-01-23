@@ -3,86 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <title>Waapi</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div id="intro">
-        <div class="main-title">
-            <h1>WAAPI</h1>
-            <h1>WAAPI</h1>
-            <h1>WAAPI</h1>
-        </div>
 
-        <h3 class="subtitle"><span>W</span>eb <span>A</span>nimation <span>A</span>pplication <span>P</span>rogramming <span>I</span>nterface</h3>
+<div id="intro">
 
-        <div class="summary">
-            <ul>
-                <li><a href="">1. Présentation</a></li>
-                <li><a href="">2. Avantages et Inconvenients</a></li>
-                <li><a href="">3. Exemple</a></li>
-            </ul>
-        </div>
+    <div class="main-title">
+
+        <h1>WAAPI</h1>
+
+        <h1>WAAPI</h1>
+
+        <h1>WAAPI</h1>
+
     </div>
 
-    <div id="presentation">
-        <h2>1. Présentation</h2>
-        <h4>Qu'est ce que WAAPI ?</h4>
+    <h3 class="subtitle"><span>W</span>eb <span>A</span>nimation <span>A</span>pplication <span>P</span>rogramming <span>I</span>nterface</h3>
 
-        <p>WAAPI est l’abréviation de Web Animation API ou Web Animation Application Programming
-            Interface. C’est une API native en javascript qui est basée sur les animations css et
-            qui permet de les gérer directement en javascript. Grâce à cette API, il est possible
-            de construire des animations et d’avoir un contrôle sur leur lecture. Elle va combiner
-            la puissance des performances CSS et les avantages de Javascript.</p>
-
-        <h4>2 Modèles</h4>
-
-        <p>Il y a deux modèles à prendre en compte pour maîtriser cette api : le Timing Model (modèle de chronométrage) et l’Animation Model (modèle d’animation).
-            Le Timing Model va gérer la durée de l’animation, le début, la fin et les autres étapes de l’animation.
-            L’Animation Model qui gère toutes les propriétés CSS d’une animation.
-        </p>
-
-        <h4>Comment utiliser l'API</h4>
-
-        <p>Pour utiliser l’API, il faut utiliser la méthode JavaScript “animate”.
-            Elle prend 2 paramètres : un tableau composé d'objet avec les différentes propriétés CSS que l'on veut utiliser pour animer.
-            Le second paramètre est la timeline, définit par un objet qui peut prendre différentes options (le délai, l'itération, la durée, etc)
-        </p>
-    </div>
-
-    <div id="avantages">
-        <h2>Avantages et Inconvénients</h2>
-
-        <h4>Avantages</h4>
+    <div class="summary">
 
         <ul>
-            <li>Donne aux développeurs d'avantages de contrôle sur les animations CSS</li>
-            <li>Performances</li>
-            <li>Possibilité d'inverser, de mettre en pause, d'accélerer les animations.</li>
-            <li>Accès à toutes les animations</li>
-            <li>Natif</li>
+
+            <li><a href="">1. Présentation</a></li>
+
+            <li><a href="">2. Avantages et Inconvenients</a></li>
+
+            <li><a href="">3. Exemple</a></li>
+
         </ul>
 
-        <h4>Inconvénients</h4>
-
-        <p>Il y a deux modèles à prendre en compte pour maîtriser cette api : le Timing Model (modèle de chronométrage) et l’Animation Model (modèle d’animation).
-            Le Timing Model va gérer la durée de l’animation, le début, la fin et les autres étapes de l’animation.
-            L’Animation Model qui gère toutes les propriétés CSS d’une animation.
-        </p>
-
-        <h4>Concurrence</h4>
-
-        <p>Il existe des alternatives pour construire des animations. Par exemple JQuery qui propose des fonctionnalités d'animation, comme fadeIn(), fadeOut() qui permettent de faire des fondus d'apparitions d'elements ou encore la fonction animate() qui permet d'animer des propriétés CSS.
-            Pour faire des animations plus complexes, il est possible d'utiliser la librairie GreenSock.
-        </p>
     </div>
 
-    <div id="exemple">
-        <h2>3. Exemple</h2>
+</div>
 
-        <div id="universe"></div>
-        <div class="espace"></div>
+<div id="presentation">
+
+    <h2>1. Présentation</h2>
+
+    <h4>Qu'est ce que WAAPI ?</h4>
+
+    <p>WAAPI est l’abréviation de Web Animation API ou Web Animation Application Programming
+
+        Interface. C’est une API native en javascript qui est basée sur les animations css et
+
+        qui permet de les gérer directement en javascript. Grâce à cette API, il est possible
+
+        de construire des animations et d’avoir un contrôle sur leur lecture. Elle va combiner
+
+        la puissance des performances CSS et les avantages de Javascript.</p>
+
+    <h4>2 Modèles</h4>
+
+    <p>Il y a deux modèles à prendre en compte pour maîtriser cette api : le Timing Model (modèle de chronométrage) et l’Animation Model (modèle d’animation).
+
+        Le Timing Model va gérer la durée de l’animation, le début, la fin et les autres étapes de l’animation.
+
+        L’Animation Model qui gère toutes les propriétés CSS d’une animation.
+
+    </p>
+
+    <h4>Comment utiliser l'API</h4>
+
+    <p>Pour utiliser l’API, il faut utiliser la méthode JavaScript “animate”.
+
+        Elle prend 2 paramètres : un tableau composé d'objet avec les différentes propriétés CSS que l'on veut utiliser pour animer.
+
+        Le second paramètre est la timeline, définit par un objet qui peut prendre différentes options (le délai, l'itération, la durée, etc)
+
+    </p>
+
+</div>
+
+<div id="avantages">
+
+    <h2>Avantages et Inconvénients</h2>
+
+    <h4>Avantages</h4>
+
+    <ul>
+
+        <li>Donne aux développeurs d'avantages de contrôle sur les animations CSS</li>
+
+        <li>Performances</li>
+
+        <li>Possibilité d'inverser, de mettre en pause, d'accélerer les animations.</li>
+
+        <li>Accès à toutes les animations</li>
+
+        <li>Natif</li>
+
+    </ul>
+
+    <h4>Concurrence</h4>
+
+    <p>Il existe des alternatives pour construire des animations. Par exemple JQuery qui propose des fonctionnalités d'animation, comme fadeIn(), fadeOut() qui permettent de faire des fondus d'apparitions d'elements ou encore la fonction animate() qui permet d'animer des propriétés CSS.
+
+        Pour faire des animations plus complexes, il est possible d'utiliser la librairie GreenSock.
+
+    </p>
+
+</div>
+
+<div id="exemple">
+
+    <h2>3. Exemple</h2>
+
+    <div id="universe"></div>
+
+    <div class="espace"></div>
+
+    <div class="explication">
+
+        <p>Ci-dessus une animation d'étoiles filantes, réalisée avec la Web Animation API</p>
+
+        <h4>Comment faire cette animation ?</h4>
+
+        <h3>Présentation du code</h3>
+
+        <p>Tout d'abord, il faut définir plusieurs variables tels que le nombre d'étoiles pour une animation,
+
+            la durée maximale d'apparition d'une étoile ,la taille du "cadre" de l'animation.
+
+        <pre>
+
+<code>
+
+const starCount = 500;
+
+const maxTime = 31;
+
+const width = 600;
+
+const height = 600;
+
+</code>
+
+</pre>
+
+        </p>
+
+        <p>Il faut aussi selectionner la balise qui va contenir l'animation. Ici ça sera la balise avec l'id "universe"
+
+        <pre>
+
+<code>
+
+const universe = document.getElementById('universe');
+
+</code>
+
+</pre>
+
+        <p>                La balise HTML :
+
+        </p>
+
+        <pre>
+
+<code>
+
+&lt;div id="universe"&gt;&lt;div&gt;
+
+</code>
+
+</pre>
+
+        </p>
+
+        <p>Pour chaque étoile, on lui attribue une position sur
+
+            l'axe Y et une vitesse puiss on lui crée une balise div</p>
+
+        <pre>
+
+<code>
+
+let ypos = Math.round(Math.random() * height);
+
+let star = document.createElement('div');
+
+let speed = 1000 * (Math.random() * maxTime + 1);
+
+</code>
+
+</pre>
+
+        <p>Ensuite on ajoute une classe "star" à l'étoile pour la stylisée, </p>
+
+        <pre>
+
+<code>
+
+star.setAttribute('class', 'star');
+
+</code>
+
+</pre>
+
+        <p>On ajoute l'étoile (la balise div que l'on vient de créer) à l'univers (balise div avec l'id "universe")</p>
+
+        <pre>
+
+<code>
+
+universe.appendChild(star);
+
+</code>
+
+</pre>
+
+        <h3>Fonction animate</h3>
+
+        <p>Maintenant, on va voir la partie qui nous interresse le plus : la méthode JS "animate" </p>
+
+        <p>Comme énoncé précedemment la fonction animate a deux modèles :  L'Animation Model et le Timing Model</p>
+
+        <h5>Le Timing Model</h5>
+
+        <p>Pour notre exemple on a : </p>
+
+        <pre>
+
+<code>
+
+[
+
+{transform: 'translate3d(' + width + 'px, ' + ypos + 'px, 0)'}
+
+// Première keyframe,
+
+{transform: 'translate3d(-' + Math.random() * 256 + 'px, ' + ypos + 'px,
+
+0)'} // Deuxième keyframe
+
+]
+
+</code>
+
+</pre>
+
+        <p>
+
+            Ce tableau comporte les images clès (keyframes) qui sont défini ici par 2 objets,
+
+            le premier objet contient les propriétés CSS pour la première keyframe (début de l'animation).
+
+            On place l'étoile tout à droite à une hauteur défini aléatoirement par ypos.
+
+            <br>
+
+            <br>
+
+            La deuxième keyframe correspond à la position de l'étoile à la fin de l'animation
+
+        </p>
+
+        <h5>Timing Model</h5>
+
+        <pre>
+
+<code>
+
+{
+
+delay: Math.random() * -speed,
+
+duration: speed,
+
+iterations: 1000
+
+}
+
+</code>
+
+</pre>
+
+        <p>Dans cette objet, on définit le délai "delay" qui permet de démarrer l'animation en attendant un temps donné.
+
+            <br>
+
+            La durée de l'animation "duration", ici égale à la vitesse speed.
+
+            <br>
+
+            Et on choisit le nombre de fois que se répète l'animation avec "iterations". L'animation d'une étoile se répètera 1000 fois.
+
+        </p>
+
     </div>
-    <script src="script.js"></script>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
