@@ -35,3 +35,18 @@ for (let i = 0; i < starCount; ++i) {
     );
 
 }
+
+
+//Marquee
+const marquee = document.getElementsByClassName('marquee')[0];
+
+marquee.animate(
+    [
+        {transform: 'translateX(0)'},
+        {transform: 'translateX(-50%)'}
+    ],
+    {
+        iterations: Infinity,
+        duration: 30000
+    }
+)

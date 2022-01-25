@@ -12,92 +12,121 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-
     margin: 0;
-
     font-family: 'Be Vietnam Pro';
 
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
 
     margin: 0;
 
 }
 
+svg{
+    position: absolute;
+    z-index: -1;
+}
+
+#svg-2{
+    top: 0;
+    right: 0;
+}
+
+#svg-3{
+    top: 1500px;
+    right: 0;
+}
+
+#svg-4{
+    top: 2000px;
+    left: 0;
+}
+
+#svg-5{
+    top: 3000px;
+    left: 0;
+}
+
+#svg-6{
+    top: 3800px;
+    left: 0;
+}
+
+#svg-7{
+    top: 3800px;
+    right: 0;
+}
+
+#svg-8{
+    top: 3500px;
+    right: 0;
+}
+
+.row{
+    margin-top: 100px;
+}
+
 #intro{
-
     text-align: center;
-
-    margin-top: 50px;
-
     margin-bottom: 200px;
-
 }
 
 #intro .main-title{
-
-    height: 300px;
-
-    position: relative;
-
-    width: fit-content;
-
+    width: 1000px;
     margin: auto;
-
+    height: 260px;
+    display: flex;
 }
 
-#intro .main-title h1{
+.summary ul li{
+    background: linear-gradient(to right, var(--blue) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position .3s ease;
+    padding-left: 10px;
+    text-align: left;
+    list-style: none;
+    border-radius: 10px;
+    margin: 8px 0;
+}
 
-    font-family: Shrikhand;
+.summary ul li:hover{
+    background-position: 0%;
+}
 
-    font-size: 220px;
-
-    letter-spacing: 3rem;
-
+.summary ul li a{
     color: var(--black);
-
-    z-index: 2;
-
+    transition: color .3s ease;
 }
 
-#intro .main-title h1:nth-child(2) {
-
-    position: absolute;
-
-    top: 17px;
-
-    left: 21px;
-
+.summary ul li:hover a{
     color: white;
-
-    text-shadow: 5px 5px var(--blue);
-
-    z-index: -1;
-
 }
 
-#intro .main-title h1:nth-child(3) {
+#intro .marquee-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
 
-    position: absolute;
+#intro .marquee{
+    white-space: nowrap;
+    font-weight: bolder;
+    font-size: 60px;
+}
 
-    top: 7px;
-
-    left: 7px;
-
-    color: white;
-
-    text-shadow: 5px 2px var(--pink);
-
-    z-index: -1;
-
+#intro .marquee:after{
+    content: ' WEB ANIMATION APPLICATION PROGRAMMING INTERFACE WEB ANIMATION APPLICATION PROGRAMMING INTERFACE';
 }
 
 #intro .subtitle{
-
     font-size: 40px;
-
 }
 
 #intro .subtitle span:nth-child(odd){
@@ -117,22 +146,6 @@ h1, h2, h3{
     width: 400px;
 
     margin: 80px auto
-
-}
-
-.summary ul{
-
-    list-style: none;
-
-    margin: auto;
-
-}
-
-.summary li{
-
-    text-align: left;
-
-    padding: 10px 0;
 
 }
 
@@ -159,31 +172,25 @@ h2{
 }
 
 #presentation, #avantages, #exemple{
-
-    width: 50%;
-
+    width: 55%;
     margin: auto;
-
 }
 
 h4{
 
     color: var(--pink);
 
-    font-size: 20px;
+    font-size: 22px;
 
     text-transform: uppercase;
-
     letter-spacing: 8px;
 
 }
 
 p{
-
-    font-size: 20px;
-
-    margin-bottom: 20px;
-
+    margin-bottom: 50px;
+    font-size: 18px;
+    line-height: 1.5em;
 }
 
 /* Exemple */
@@ -224,7 +231,7 @@ p{
 
 code{
 
-    font-size: 20px;
+    font-size: 18px;
 
     color: white;
 
@@ -238,4 +245,41 @@ pre{
 
     padding: 0px 10px;
 
+}
+
+#avantages ul{
+    list-style: none;
+}
+
+#avantages ul li{
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+#avantages ul i{
+    padding-right: 10px;
+}
+
+.explication h3{
+    margin-top: 10px;
+}
+
+@media (max-width: 1250px) {
+    #presentation, #avantages, #exemple{
+        width: 90%;
+    }
+
+    #intro .main-title{
+        width: 100%;
+    }
+
+    #intro .main-title svg {
+        width: 90%;
+        margin: auto;
+        position: initial;
+    }
+
+    #svg-5{
+        width: 100%;
+    }
 }
